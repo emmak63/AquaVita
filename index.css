@@ -1,0 +1,20 @@
+/*adding background color*/
+body {
+  background-color: rgb(177, 215, 228);
+}
+
+/*redigeju virsrakstu, krasa un izvietojums*/
+#virsraksts {
+    color: white;
+    text-align: center;
+}
+
+/*links to the center*/
+nav{
+  text-align: center;
+}
+
+/*links to the right*/
+footer{
+  text-align: right;
+}
