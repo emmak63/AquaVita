@@ -18,3 +18,89 @@ nav{
 footer{
   text-align: right;
 }
+
+.nav {
+  background-color: rgb(255, 255, 255); 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: rgb(0, 40, 173);
+}
+
+h3 {
+  color: rgb(0, 40, 173);
+}
+
+p {
+  color: white;
+  font-size : 18px;
+}
+
+li {
+  color: white;
+  font-size : 18px;
+}
+
+
+/*navigacija (izvelne ausha galvenaja lapa) itka "pazud" 
+kad uzved peliti
+ */
+.nav:hover {
+  background-color: rgb(177, 215, 228);
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(0, 40, 173);
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav a i {
+  margin-right: 6px; /* Spacing between icon and text */
+}
+
+
+/* Dropdown styles */
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  position: relative; /* Set parent li to relative */
+  display: inline-block; /* For horizontal layout */
+}
+
+.dropdown {
+  display: none; /* Initially hide the dropdown */
+  position: absolute; /* Position relative to the parent */
+  top: 100%; /* Position below the parent menu item */
+  left: 0; /* Align to the left */
+  background-color: white; /* Background color for dropdown */
+  border: 1px solid rgb(44, 79, 90); /* Optional border */
+  -index: 1000; /* Ensure dropdown is above other content */
+}
+
+.nav li:hover .dropdown {
+  display: block; /* Show dropdown on hover */
+}
+
+.dropdown li {
+  margin: 0; /* No margin for dropdown items */
+}
+
+.dropdown a {
+  color: rgb(44, 79, 90);
+  padding: 10px; /* Padding for dropdown items */
+  display: block; /* Block display for easy clicking */
+}
+
+.dropdown a:hover {
+  background-color: #f0f0f0; /* Background color on hover for dropdown */
+}

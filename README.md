@@ -1,52 +1,54 @@
-# WheatherForecast
-laikapstaļu majaspalapa, kura lietotajs var :
-+ izveleties latvijas pilsetu un redzet gradus celsijaa,
-+ mitrumu
-+ makoņainība
-+ nokrišņi
-+ vējš.
-  - izveleties dienu, uz kuru velas paskatities laikapstaklus.
-  - un apkatit paris attelu sno tas pilsetas
-  - apskatit vai ir bridinajums par karstumu
+# AquaVita
+1. Vietnes būtība
 
-
-  ////////
-  Vietnes mērķis:
-sniegt lietotājiem aktuālu laikapstākļu informāciju jebkurā latvijas pilseta, kā arī interesantus faktus un datus, kas saistīti ar meteoroloģiju.
-
-
-Galvenās funkcijas:
-Laika prognoze:
-* dienas prognoze tai un nākamajām dienām.
-* Informācija par temperatūru, nokrišņiem, mitrumu, vēju, atmosfēras spiedienu.
-
-
-Laikapstākļu meklēšana:
-* Ātri meklet laikapstākļus pēc pilsētas,
-* Iespēja saglabāt iecienītākās vietas, lai ātri piekļūtu prognozei.
-
-
-Papildu funkcijas:
-*Interesanti fakti: Interesanti fakti par laikapstākļiem, klimata parādībām un meteoroloģijas vēsturi.
-*Laikapstākļu kalendārs: Informācija par vidējo temperatūru un nokrišņu daudzumu dažādos gada mēnešos.
-
-
-Sociālie mediji:
-* Komentāri un diskusijas par prognozēm ar citiem lietotājiem.
+Mērķis: palīdzēt lietotājam izsekot un kontrolēt ikdienas šķidruma patēriņu. Auditorija: Cilvēki, kas rūpējas par savu veselību un vēlas uzturēt organisma ūdens līdzsvaru. Funkcionālis: nodrošināt lietotājam ērtu rīku patērētā šķidruma ierakstīšanai, sekot līdzi progresam un saņemt personalizētus ieteikumus.
 
 
 
-PIEVIENOT PEC TAM :
+2. Galvenās funkcijas
 
-Vizualizējiet laikapstākļus, izmantojot kartes, grafikus un animācijas.
+- Dienas normas uzstādīšana: Lietotājs nosaka individuālu mērķi šķidruma patēriņam mililitros.
 
-meklet pec koordinatam
+- Ieraksta pievienošana: Lietotājs var viegli pievienot jaunus ierakstus par izdzerto šķidrumu, norādot dzēriena tipu (ūdens, tēja, kafija utt.) un tilpumu.
 
-Iespēja dalīties ar laika prognozi sociālajos tīklos.
+- Progresa izsekošana: vietne vizuāli parāda lietotāja progresu dienas normas sasniegšanā grafika vai diagrammas veidā.
 
-Personalizēšana: lietotājs var pielāgot vietni savām vajadzībām, izvēloties sev vēlamās mērvienības, pievienojot iecienītākās vietas un atlasot viņu interesējošos laikapstākļus.
+- Atgādinājumi: vietne nosūta lietotājam paziņojumus par nepieciešamību papildināt ūdens bilanci.
 
-Interaktīvās kartes: Interaktīvās laikapstākļu kartes ļauj lietotājiem pētīt laikapstākļus dažādos pasaules reģionos un izsekot atmosfēras frontu kustībai.
+- Statistika: sniedz detalizētu statistiku par izvēlēto periodu: kopējais izdzertā šķidruma apjoms, populārākie dzērieni, vidējais patēriņš dienā.
 
-Brīdinājumi: vietne var nosūtīt lietotājam pašpiegādes paziņojumus par svarīgām laikapstākļu izmaiņām, piemēram, stipru lietu, pērkona negaisu vai sniegputeni.
+3. Papildu interesantas funkcijas
 
+Personalizēšana:
+
+  Iespēja veidot pielāgotus profilus dažādiem ģimenes locekļiem.
+
+  Integrācija ar fitnesa trekeriem, lai sinhronizētu fizisko aktivitāšu datus un automātiski aprēķinātu šķidruma vajadzību.
+
+Izglītības saturs:
+
+  Raksti un padomi par dzeramā režīma nozīmi, dažādu dzērienu noderīgumu, dehidratācijas ietekmi uz organismu.
+
+  Interaktīvie testi optimālās dienas normas noteikšanai.
+
+Sociālā sastāvdaļa:
+
+  Iespēja dalīties savos sasniegumos ar draugiem un sacensties ar citiem lietotājiem.
+
+  Veidot veselīga dzīvesveida cilvēku kopienu.
+
+Integrācija ar citām lietojumprogrammām:
+
+  Integrācija ar kalendāru, lai ņemtu vērā fiziskās aktivitātes un laika apstākļus, kas var ietekmēt šķidruma nepieciešamību.
+
+  Integrācija ar viedajām ierīcēm (gudrās pudeles, gudrās stundas), lai automātiski izsekotu šķidruma patēriņam.
+
+Spēles elementi:
+
+  Iespēja radīt virtuālus mīluļus, kas aug un attīstās atkarībā no tā, kā lietotājs ievēro dzeramo režīmu.
+
+Idejas radošai pieejai
+
+  Vizualizācija: izmantot spilgtu un pievilcīgu grafiku, animāciju, lai parādītu lietotāja progresu un motivāciju.
+
+  Personalizēt avatāru: Lietotājs var izveidot savu unikālo avatāru, kas tiks mainīts atkarībā no sasniegtajiem rezultātiem.
