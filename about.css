@@ -1,43 +1,57 @@
-.grid{
+/* tris kolonnas un ramis*/
+.grid {
     display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 8px;
-}
-
-/*atseviski redageju kartiti, border color, lai lēni transformejas
- */
-.grid_item {
-    background-color: rgba(255, 255, 255);
-    border: 8px solid #83aaca;
-    padding: 20px;
-    font-size: 30px;
-    image-orientation: left;
-    display: flex;
-    transition: transform 0.5s, box-shadow 0.5s;
-}
-
-.first{
-    display: grid;
-    padding: 10px;
-    font-size: medium;
-}
-
-button {
-    color: #000000;
-    background-color: #83aaca;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 3px;
-    cursor: pointer;
-}
+    grid-template-columns: auto auto auto; /* auto lai ja kas mainit kolonnun skaitu */
+    column-gap: 8px; /* Iestata atstarpi starp kolonnām */
+  }
   
-button:hover {
-    background-color: rgb(224, 110, 110);
-}
-
-
-.grid_item:hover {
-    transform: translateY(15px);
-    box-shadow: 2px 10px 18px rgb(84, 201, 236)
-}
+  /* stilizet un parveidot kartites */
+  .grid_item {
+    background-color: rgba(255, 255, 255); 
+    border: 8px solid #83aaca; /* Izveido apmali ap vienumu */
+    padding: 20px; 
+    font-size: 30px; 
+    image-orientation: left; 
+    display: flex; /* Rāda vienumu kā elastīgu konteineru */
+    transition: transform 0.5s, box-shadow 0.5s; /* Iespējo gludas pārejas transformācijām un ēnām */
+  }
+  
+  /* Stilē pirmo kartitit*/
+  .first {
+    display: grid; 
+    padding: 10px; 
+    font-size: medium; /* Iestata pirmajam elementa fonta lielumu */
+  }
+  
+  /* Stilē pogas */
+  button {
+    color: #000000; /* Iestata teksta krāsu uz melnu */
+    background-color: #83aaca; /* Iestata fona krāsu uz konkrētu krāsu */
+    padding: 5px 10px; 
+    text-align: center; 
+    font-size: 16px; 
+    margin: 4px 3px;
+    cursor: pointer; /* Maina kursoru uz roku, uzvedot peli virs pogas */
+  }
+  
+  /* Stilē pogas, kad virs tām tiek uzvedta pele */
+  button:hover {
+    background-color: rgb(224, 110, 110); /* Maina fona krāsu, kad tiek uzvedta pele */
+  }
+  
+  /* maina kartites , kad virs tiem tiek uzvedta pele */
+  .grid_item:hover {
+    transform: translateY(15px); /* Pārvieto vienumu nedaudz uz leju */
+    box-shadow: 2px 10px 18px rgb(84, 201, 236); /* Pievieno ēnu vienumam */
+    animation: zoomIn 0.5s ease-in-out; /* Pielieto tuvināšanas animāciju */
+  }
+  
+  /* Definē tuvināšanas animāciju */
+  @keyframes zoomIn {
+    0% {
+      transform: scale(1); /* Sākas ar 100% mērogu */
+    }
+    50% {
+      transform: scale(1.1); /* Tuvina līdz 110% mērogam */
+    }
+  }
