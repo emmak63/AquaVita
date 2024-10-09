@@ -1,57 +1,165 @@
 /* tris kolonnas un ramis*/
+/* tris kolonnas un ramis*/
 .grid {
-    display: grid;
-    grid-template-columns: auto auto auto; /* auto lai ja kas mainit kolonnun skaitu */
-    column-gap: 8px; /* Iestata atstarpi starp kolonnām */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* Set a fixed column width */
+  column-gap: 8px; /* Iestata atstarpi starp kolonnām */
+}
+
+/* stilizet un parveidot kartites */
+.grid_item {
+  background-color: #F7E7DC;
+  border: 8px solid #405D72; /* Izveido apmali ap vienumu */
+  padding: 20px;
+  font-size: 30px;
+  image-orientation: left;
+  display: flex; /* Rāda vienumu kā elastīgu konteineru */
+  transition: transform 0.5s, box-shadow 0.5s; /* Iespējo gludas pārejas transformācijām un ēnām */
+  max-height: 300px; /* Adjust the height as needed */
+  overflow-y: auto;
+  margin-top: 30px;
+}
+
+/* Stilē pirmo kartitit*/
+.first {
+  display: grid;
+  padding: 10px;
+  font-size: medium; /* Iestata pirmajam elementa fonta lielumu */
+}
+
+/* Stilē pogas */
+.tap-button {
+  color: #F7E7DC; /* Iestata teksta krāsu uz melnu */
+  background-color: #405D72; /* Iestata fona krāsu uz konkrētu krāsu */
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 3px;
+  cursor: pointer; /* Maina kursoru uz roku, uzvedot peli virs pogas */
+}
+
+/* Stilē pogas, kad virs tām tiek uzvedta pele */
+.tap-button:hover {
+  background-color: #758694; /* Maina fona krāsu, kad tiek uzvedta pele */
+}
+
+/* maina kartites , kad virs tiem tiek uzvedta pele */
+.grid_item:hover {
+  transform: translateY(15px); /* Pārvieto vienumu nedaudz uz leju */
+  box-shadow: 2px 10px 18px rgb(84, 201, 236); /* Pievieno ēnu vienumam */
+  animation: zoomIn 0.5s ease-in-out; /* Pielieto tuvināšanas animāciju */
+}
+
+/* Definē tuvināšanas animāciju */
+@keyframes zoomIn {
+  0% {
+    transform: scale(1); /* Sākas ar 100% mērogu */
   }
+  50% {
+    transform: scale(1.1); /* Tuvina līdz 110% mērogam */
+  }
+}
+
+/* Add these styles for the text container */
+.text-container {
+  display: none; /* Initially hide the text container */
+}
+
+.tap-button:hover + .text-container {
+  display: block; /* Show the text container when hovering over the button */
+}
+
+/*links to the center*/
+nav{
+  text-align: center;
   
-  /* stilizet un parveidot kartites */
-  .grid_item {
-    background-color: rgba(255, 255, 255); 
-    border: 8px solid #83aaca; /* Izveido apmali ap vienumu */
-    padding: 20px; 
-    font-size: 30px; 
-    image-orientation: left; 
-    display: flex; /* Rāda vienumu kā elastīgu konteineru */
-    transition: transform 0.5s, box-shadow 0.5s; /* Iespējo gludas pārejas transformācijām un ēnām */
-  }
-  
-  /* Stilē pirmo kartitit*/
-  .first {
-    display: grid; 
-    padding: 10px; 
-    font-size: medium; /* Iestata pirmajam elementa fonta lielumu */
-  }
-  
-  /* Stilē pogas */
-  button {
-    color: #000000; /* Iestata teksta krāsu uz melnu */
-    background-color: #83aaca; /* Iestata fona krāsu uz konkrētu krāsu */
-    padding: 5px 10px; 
-    text-align: center; 
-    font-size: 16px; 
-    margin: 4px 3px;
-    cursor: pointer; /* Maina kursoru uz roku, uzvedot peli virs pogas */
-  }
-  
-  /* Stilē pogas, kad virs tām tiek uzvedta pele */
-  button:hover {
-    background-color: rgb(224, 110, 110); /* Maina fona krāsu, kad tiek uzvedta pele */
-  }
-  
-  /* maina kartites , kad virs tiem tiek uzvedta pele */
-  .grid_item:hover {
-    transform: translateY(15px); /* Pārvieto vienumu nedaudz uz leju */
-    box-shadow: 2px 10px 18px rgb(84, 201, 236); /* Pievieno ēnu vienumam */
-    animation: zoomIn 0.5s ease-in-out; /* Pielieto tuvināšanas animāciju */
-  }
-  
-  /* Definē tuvināšanas animāciju */
-  @keyframes zoomIn {
-    0% {
-      transform: scale(1); /* Sākas ar 100% mērogu */
-    }
-    50% {
-      transform: scale(1.1); /* Tuvina līdz 110% mērogam */
-    }
-  }
+}
+
+.nav {
+  background-color: rgb(255, 255, 255); 
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*navigacija (izvelne ausha galvenaja lapa) itka "pazud" 
+kad uzved peliti
+ */
+ .nav:hover {
+  background-color: #F7E7DC; 
+}
+
+.nav a {
+  padding: 10px;
+  position: relative;
+  transition: color 0.3s ease;
+  text-decoration: none; /*uberet poscerknutost */
+  color: #405D72; 
+
+}
+
+.nav a i {
+  margin-right: 6px; /* Spacing between icon and text */
+}
+
+
+/* Dropdown styles */
+.nav {
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav li {
+  position: relative; /* Set parent li to relative */
+  display: inline-block; /* For horizontal layout */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-container {
+  display : none;
+  position: absolute; /* dont move */
+  background-color: #FFF8F3;
+  min-width: 155px;
+  box-shadow: 0px 8px 16px #758694;
+  padding: 12px;
+}
+
+.dropdown-container a {
+  color: #758694;
+  padding : 12px 16px;
+  display: block;
+}
+
+.dropdown-container a:hover {
+  background-color: #F7E7DC; 
+}
+
+.dropdown:hover .dropdown-container {
+  display: block;
+}
+
+body{
+background: rgb(64,93,114);
+background: linear-gradient(90deg, rgba(64,93,114,1) 0%, rgba(117,134,148,1) 35%, rgba(247,231,220,1) 100%);
+}
+
+@media (min-width: 480px) {
+  /* Styles for small screens */
+}
+
+@media (min-width: 720px) {
+  /* Styles for medium screens */
+}
+
+@media (min-width: 768px) {
+  /* Styles for tablets and larger */
+}
+
+@media (min-width: 1024px) {
+  /* Styles for desktops */
+}
