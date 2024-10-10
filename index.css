@@ -1,12 +1,14 @@
 /*adding background color*/
 body {
   background-color: #FFF8F3;
+  height: 100vh;
 }
 
 /*redigeju virsrakstu, krasa un izvietojums*/
 #virsraksts {
     color: #758694;
     text-align: center;
+    margin-top: 0;
 }
 
 /*links to the center*/
@@ -17,7 +19,24 @@ nav{
 
 /*links to the right*/
 footer{
-  text-align: right;
+  text-align: center;
+  bottom: 0;
+  position : fixed; 
+}
+
+#footerfo {
+  color: #758694;
+}
+
+.footer-container {
+  display: inline-block;
+  background-color: #F7E7DC;
+  width : 200vh;
+}
+
+.header-container{
+  display: block;
+  background-color: #F7E7DC;
 }
 
 .nav {
@@ -109,12 +128,13 @@ kad uzved peliti
 
 .main-content{
   border: 5px solid #405D72;
-  margin-left: 20%;
+  margin-left: 25%;
   margin-right: 20%;
   margin-top: 7%;
   text-align: center;
   border-radius: 12px;
   background-color: #758694;
+  width : 50%;
 }
 
 @media (min-width: 480px) {
@@ -131,4 +151,23 @@ kad uzved peliti
 
 @media (min-width: 1024px) {
   /* Styles for desktops */
+}
+
+.aside-container{
+  position: fixed;
+  top: 15%;
+  display: inline-block;
+  border: 5px solid #405D72;
+  left: 0;
+  width: 15%;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #758694;
+  height : 70%; 
+}
+
+
+main{
+  /*display: inline-block;*/ 
+  display:flex;
 }
