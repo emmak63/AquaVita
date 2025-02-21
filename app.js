@@ -11,10 +11,30 @@ function toggleForm() {
     }
 }
 
+// MODĀLAIS LOGS
+function openDrinkModal() {
+    document.getElementById("drinkModal").style.display = "block";
+}
+
+function closeDrinkModal() {
+    document.getElementById("drinkModal").style.display = "none";
+}
+
+function selectDrink(drink) {
+    document.getElementById("selectedDrink").textContent = drink;
+    document.getElementById("selectedDrink").setAttribute("data-value", drink);
+    closeDrinkModal();
+}
+
 function addDrink() {
-    let type = document.getElementById("drinkType").value;
+    let type = document.getElementById("selectedDrink").getAttribute("data-value");
     let amount = document.getElementById("drinkAmount").value;
     let customAmount = document.getElementById("customAmount").value;
+
+    if (!type) {
+        alert("Lūdzu izvēlieties dzēriena veidu!");
+        return;
+    }
 
     let finalAmount = customAmount ? customAmount : amount;
 

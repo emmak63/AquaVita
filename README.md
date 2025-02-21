@@ -5,6 +5,18 @@ Mērķis: palīdzēt lietotājam izsekot un kontrolēt ikdienas šķidruma patē
 
 
 
+1.5 Paveiktās funkcijas šobrīd : 
+1. galvenā mājaslapa ar paskaidrojumu. index.html
+2. Sadaļa ar kartītē un datiem. About.html
+3. Lietotnes sākums nodaļā App.html. 
+  3.1. pievienot dzēriena reizi un visas detaļas par to.
+  3.2. dzēst dzērienu.
+
+
+
+______________________________________________________________________________________________________________
+Funkcijas nākotnes paveikšanai. 
+
 2. Galvenās funkcijas
 
 - Dienas normas uzstādīšana: Lietotājs nosaka individuālu mērķi šķidruma patēriņam mililitros.
@@ -23,25 +35,19 @@ Personalizēšana:
 
   Iespēja veidot pielāgotus profilus dažādiem ģimenes locekļiem.
 
-  Integrācija ar fitnesa trekeriem, lai sinhronizētu fizisko aktivitāšu datus un automātiski aprēķinātu šķidruma vajadzību.
 
 Izglītības saturs:
 
   Raksti un padomi par dzeramā režīma nozīmi, dažādu dzērienu noderīgumu, dehidratācijas ietekmi uz organismu.
 
-  Interaktīvie testi optimālās dienas normas noteikšanai.
 
 Sociālā sastāvdaļa:
 
   Iespēja dalīties savos sasniegumos ar draugiem un sacensties ar citiem lietotājiem.
 
-  Veidot veselīga dzīvesveida cilvēku kopienu.
 
 Integrācija ar citām lietojumprogrammām:
 
-  Integrācija ar kalendāru, lai ņemtu vērā fiziskās aktivitātes un laika apstākļus, kas var ietekmēt šķidruma nepieciešamību.
-
-  Integrācija ar viedajām ierīcēm (gudrās pudeles, gudrās stundas), lai automātiski izsekotu šķidruma patēriņam.
 
 Spēles elementi:
 

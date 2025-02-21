@@ -9,15 +9,11 @@
 <body>
     <div class="container">
         <h2>track your drink</h2>
-        <button class="show-form-btn" onclick="toggleForm()" id="addDrinkBtn">Pievienot dzērienu</button>
+        <button class="show-form-btn" onclick="toggleForm()" id="addDrinkBtn">add drink</button>
 
         <div class="input-section" id="drinkForm" style="display: none;">
-            <label for="drinkType">Type:</label>
-            <select id="drinkType">
-                <option value="Ūdens">water</option>
-                <option value="Kafija">kaffee</option>
-                <option value="Tēja">tea</option>
-            </select>
+            <label>Dzēriens:</label>
+            <button onclick="openDrinkModal()" class="select-btn" id="selectedDrink">type</button>
 
             <label for="drinkAmount">ml:</label>
             <select id="drinkAmount">
@@ -29,12 +25,24 @@
             </select>
 
             <input type="number" id="customAmount" placeholder="Cits ml" min="1">
-
-            <button onclick="addDrink()">Add</button>
+            <button onclick="addDrink()">ADD</button>
         </div>
 
-        <h3>Added drinks:</h3>
+        <h3>Pievienotie dzērieni:</h3>
         <ul id="drinkList"></ul>
+    </div>
+
+    <!-- MODĀLAIS LOGS -->
+    <div id="drinkModal" class="modal">
+        <div class="modal-content">
+            <h3>Izvēlies dzērienu</h3>
+            <div class="drink-options">
+                <button onclick="selectDrink('Ūdens')">💧 water</button>
+                <button onclick="selectDrink('Kafija')">☕ kaffee</button>
+                <button onclick="selectDrink('Tēja')">🍵 tea</button>
+            </div>
+            <button class="close-btn" onclick="closeDrinkModal()">close</button>
+        </div>
     </div>
 
     <script src="app.js"></script>
