@@ -19,13 +19,13 @@ nav{
 
 /*links to the right*/
 footer{
-  text-align: center;
   bottom: 0;
   position : fixed; 
 }
 
 #footerfo {
   color: #758694;
+  text-align: center;
 }
 
 .footer-container {

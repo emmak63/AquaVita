@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dzērienu Sekotājs</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="container">
+        <h2>track your drink</h2>
+        <button class="show-form-btn" onclick="toggleForm()" id="addDrinkBtn">Pievienot dzērienu</button>
+
+        <div class="input-section" id="drinkForm" style="display: none;">
+            <label for="drinkType">Type:</label>
+            <select id="drinkType">
+                <option value="Ūdens">water</option>
+                <option value="Kafija">kaffee</option>
+                <option value="Tēja">tea</option>
+            </select>
+
+            <label for="drinkAmount">ml:</label>
+            <select id="drinkAmount">
+                <option value="100">100ml</option>
+                <option value="200">200ml</option>
+                <option value="300">300ml</option>
+                <option value="500">500ml</option>
+                <option value="1000">1000ml</option>
+            </select>
+
+            <input type="number" id="customAmount" placeholder="Cits ml" min="1">
+
+            <button onclick="addDrink()">Add</button>
+        </div>
+
+        <h3>Added drinks:</h3>
+        <ul id="drinkList"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
