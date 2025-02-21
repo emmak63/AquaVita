@@ -9,6 +9,17 @@
 <body>
     <div class="container">
         <h2>track your drink</h2>
+        <!-- Sākumā lietotājs ievada mērķi -->
+        <div id="goal-container">
+        <label for="daily-goal">Ievadi savu dienas ūdens mērķi (ml):</label>
+        <input type="number" id="daily-goal" min="500" step="100" placeholder="Piemēram, 3000">
+        <button id="set-goal">Iestatīt</button>
+    </div>
+
+<!-- Progresu rādītājs -->
+    <div id="progress-container" style="display: none;">
+        <p>Dienas mērķis: <span id="progress">0</span>/<span id="goal">3000</span> ml</p>
+</div>
         <button class="show-form-btn" onclick="toggleForm()" id="addDrinkBtn">add drink</button>
 
         <div class="input-section" id="drinkForm" style="display: none;">

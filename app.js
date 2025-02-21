@@ -63,3 +63,33 @@ function addDrink() {
 function removeDrink(button) {
     button.parentElement.remove();
 }
+
+let dailyGoal = 0;
+let currentIntake = 0;
+
+// Funkcija, lai iestatītu dienas mērķi
+document.getElementById("set-goal").addEventListener("click", function () {
+    const inputGoal = document.getElementById("daily-goal").value;
+    
+    if (inputGoal > 0) {
+        dailyGoal = parseInt(inputGoal);
+        document.getElementById("goal").textContent = dailyGoal;
+        document.getElementById("progress-container").style.display = "block";
+        document.getElementById("goal-container").style.display = "none"; // Paslēpj mērķa ievadi
+    }
+});
+
+// Funkcija, lai atjauninātu progresu pēc dzēriena pievienošanas
+function updateProgress(ml) {
+    currentIntake += ml;
+    document.getElementById("progress").textContent = currentIntake;
+}
+
+// Atjauno dzēriena pievienošanas loģiku
+document.getElementById("add-drink-button").addEventListener("click", function () {
+    let selectedMl = parseInt(document.getElementById("drink-amount").value);
+    
+    if (!isNaN(selectedMl) && selectedMl > 0) {
+        updateProgress(selectedMl);
+    }
+});
